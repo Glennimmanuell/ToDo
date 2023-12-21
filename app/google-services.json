@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "780700779106",
+    "project_id": "loginuser-7ace3",
+    "storage_bucket": "loginuser-7ace3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780700779106:android:766b6ca9b24207df83073b",
+        "android_client_info": {
+          "package_name": "com.example.todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAemn-492y9_hx3qV2xQJ7ccc51mmmw8D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

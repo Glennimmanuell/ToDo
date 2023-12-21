@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/taskTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" lakukan sekarang!"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskTxt"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:nestedScrollingEnabled="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:src="@drawable/baseline_playlist_add"
+        android:contentDescription="@string/app_name"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToDo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@android:color/holo_blue_dark</item>
+    </style>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/biru</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_playlist_add</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/Base.Theme.ToDo</item>
+
+    </style>
+    <style name="Theme.ToDo" parent="Base.Theme.ToDo" />
+
+    <style name="styleDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+</resources>
